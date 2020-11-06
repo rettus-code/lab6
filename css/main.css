@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css");
 @import url("https://use.fontawesome.com/releases/v5.13.1/css/all.css");
+@import url(e:\documents\homework\csci202\lab6\node_modules\baguettebox.js\dist\baguetteBox.min.css);
 .loader.spinner:before {
   width: 117px;
   height: 117px;
@@ -64,6 +65,15 @@
   height: 100%;
   background-color: #ddd;
   z-index: 9999999;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  background-repeat: no-repeat;
 }
 
 universal {
@@ -361,14 +371,13 @@ figure .img {
   margin: 0.2em 2em 0.2em 2em;
 }
 
-.item img {
+.item a img {
   width: 100%;
   height: 100%;
 }
 
-.item img:hover {
-  filter: blur(2px);
-  filter: brightness(60%);
+.item a img:hover {
+  filter: blur(2px) brightness(60%);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
   cursor: pointer;
 }

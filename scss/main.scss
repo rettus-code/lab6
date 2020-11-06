@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');  
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"); 
 @import url("https://use.fontawesome.com/releases/v5.13.1/css/all.css");  
+@import '../node_modules/baguettebox.js/dist/baguetteBox.min.css';
 @import "pageloader";
+@import "particles";
 
 $white-color: #fff;
 $main-color: #697e83;
@@ -147,8 +149,8 @@ a {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);  
 }
 .button:hover {
-   color: #697e83;
-   background-color: #ffffff; 
+    color: #697e83;
+    background-color: #ffffff; 
 }
 #toggle {
     display: none;
@@ -261,13 +263,12 @@ figure .img {
     gap: 20px;
     margin: 0.2em 2em 0.2em 2em;
 }
-.item img {
+.item a img {
     width: 100%;
     height: 100%;
 }
-.item img:hover {
-    filter: blur(2px);
-    filter: brightness(60%);
+.item a img:hover {
+    filter: blur(2px) brightness(60%);
     box-shadow: 0 8px 16px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
     cursor: pointer;
 }
