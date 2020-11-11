@@ -2,7 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css");
 @import url("https://use.fontawesome.com/releases/v5.13.1/css/all.css");
-@import url(e:\documents\homework\csci202\lab6\node_modules\baguettebox.js\dist\baguetteBox.min.css);
+@import "../node_modules/baguettebox.js/dist/baguetteBox.min.css";
+@import "../node_modules/particles.js/demo/js/app.js";
+@import "node_modules/particles.js/particles.js";
+
 .loader.spinner:before {
   width: 117px;
   height: 117px;

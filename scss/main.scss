@@ -3,6 +3,8 @@
 @import url("https://use.fontawesome.com/releases/v5.13.1/css/all.css");  
 @import '../node_modules/baguettebox.js/dist/baguetteBox.min.css';
 @import "pageloader";
+@import "../js/pageloader.js";
+@import 'particles';
 @import "../node_modules/particles/node_modules/extend/index.js";
 
 $white-color: #fff;
