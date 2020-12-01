@@ -3,21 +3,21 @@ const forms = document.querySelector('.formBook')
 forms.addEventListener('submit', () => {
     //e.preventDefault();
 
-    const bookDate = forms.bookDate.value;
-    const bookDated = forms.bookDated.value;
+    const bookDate = forms.arrivedate.value;
+    const bookDated = forms.departdate.value;
     const room = forms.room.value;
     const guest = forms.guest.value;
-    const bookEmail = forms.bookEmail.value;
-    const bookMessage = forms.bookMessage.value;
+    const bookEmail = forms.email.value;
+    const bookMessage = forms.message.value;
 
     if (bookDate == '') {
         alert("Enter a Valid Arrival Date!");
-        forms.bookDate.style.border = "red";
+        forms.arrivedate.style.border = "red";
         return false;
     }
     if (bookDated == '') {
         alert("Enter a Valid Departure Date!");
-        forms.bookDated.style.border = "red";
+        forms.departdate.style.border = "red";
         return false;
     }
     if (room == '') {
@@ -32,12 +32,12 @@ forms.addEventListener('submit', () => {
     }
     if (bookEmail == '') {
         alert("Enter a Valid Email Address!");
-        forms.bookEmail.style.border = "red";
+        forms.email.style.border = "red";
         return false;
     }
     if (bookMessage == '') {
         alert("Message Field Must Not be Empty!");
-        forms.bookMessage.style.border = "red";
+        forms.message.style.border = "red";
         return false;
     }
     forms.submit();

@@ -2,7 +2,7 @@
   "name": "rettus_lab4",
   "version": "1.0.0",
   "description": "homework",
-  "main": "index.html",
+  "main": "index.php",
   "dependencies": {
     "baguettebox.js": "^1.11.1",
     "bootstrap": "^5.0.0-alpha1",
@@ -13,10 +13,7 @@
     "scrollreveal": "^4.0.7"
   },
   "devDependencies": {},
-  "scripts": {
-    "start": "node main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rettus-code/Lab4.git"
