@@ -18,7 +18,7 @@
             <div class="container">
                 <h1>Reservation</h1>
                 <p>Discover World's #1 Room For VIP</p>
-                <a href="#" class="button" data-toggle="modal" data-target="#formBook">Book Now</a>
+                <a href="#" class="button" data-toggle="modal" data-target="#RoomForm">Book Now</a>
             </div>
         </div>
     </section>
@@ -32,7 +32,6 @@
                 </div>
                 <div class="sideright">
                     <?php
-
                         include('include/config.php');
 
                         $arrivedate = $_POST['arrivedate'];
@@ -41,16 +40,15 @@
                         $guest = $_POST['guest'];
                         $email = $_POST['email'];
                         $message = $_POST['message'];
-                        "INSERT INTO reserve (arrivedate, departdate, room, guest, email, message) VALUES ('$arrivedate', '$departdate', '$room', '$guest', '$email', '$message')";
 
-                            if (!mysqli_query($con, $room)){
+                        $sql = "INSERT INTO reserve(arrivedate, departdate, room, guest, email, message) VALUES('$arrivedate', '$departdate', '$room', '$guest', '$email', '$message')";
+
+                            if (!mysqli_query($con, $sql)){
                                 echo "New Contact Not Added";
                             }
                             else {
-                                ?>
-                                <script> alert('Room reserved, Check your email for more details!')
-                                </script>;
-                                <?php
+                                echo "<script> alert('Room reserved, Check your email for more details!')
+                                </script>";
                             }
                     ?>
                     <h2>Thank You, Check <?php echo "$email"; ?> for Details</h2>
@@ -68,6 +66,11 @@
     <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <script src="/node_modules/popper.js/dist/popper.js"></script>  
+    <script src="js/pageloader.js"></script>
+    <script src="node_modules/particles.js/particles.js"></script>
+    <script src="node_modules/particles.js/demo/js/app.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/lightbox.js"></script>
     <script src="js/pageloader.js"></script>    
 </body>
 </html>

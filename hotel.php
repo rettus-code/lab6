@@ -23,7 +23,8 @@ if($row['email']==$email){
 }
 else {
 
-    $data = "INSERT INTO contact(name, phone, email, message) values('$name', '$phone', '$email', '$message')";
+    $data = "INSERT INTO contact(name, phone, email, message) values('$name', '$phone',
+    '$email', '$message')";
 
     if(mysqli_query($con, $data)){
         ?>

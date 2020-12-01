@@ -76,7 +76,7 @@
         <section class = "newsletter">
             <div class="container newsletter-grid">
                 <h1>Subscribe to Our Newsletter</h1>
-                <form method="POST" action="newsletter.php" class="feedback autocomplete">
+                <form method="POST" action="newsletter.html" class="feedback autocomplete">
                     <input type = "email" placeholder="Enter Email..." id="subscribe">
                     <button type = "submit" class = "button">Subscribe</button>
                 </form>
@@ -102,22 +102,22 @@
         <script> var date = document.lastModified; document.write(date); </script> 
     </footer>
     <div id ="RoomForm" class="modal fade">
-    <div class="modal-dialog" role="document"> 
+    <div class="modal-dialog" role   ="document"> 
     <div class="modal-content"> 
     <div class="modal-header">
         <h1 class="modal-title">Reservation Form</h1> 
     </div> 
         <div class="modal-body"> 
-    <form method = "POST" action = "booknow.php" class="formBook autocomplete feedback"><!--  new   --> 
+    <form method = "POST" action = "booknow.php" class="formBook autocomplete"><!--  new   --> 
         <input type="hidden" name="_token" value="" > 
         <div class="row my-1" > 
             <div class="form-group col-md -6 my-1"> 
                 <label class="form-label">Arrival Date</label> 
-                <input type="date" class="form-control" id="arrivedate" name="arrivedate"> 
+                <input type="date" class="form-control" id="bookDate" name="arrivedate"> 
             </div> 
             <div class="form-group col-md -6" >   
                 <label class="form-label">Departure Date</label>
-                <input type="date" class="form-control" id ="departdate" name="departdate"> 
+                <input type="date" class="form-control" id ="bookDated" name="departdate"> 
             </div> 
         </div> 
         <div class="row"> 
@@ -145,15 +145,15 @@
             <div class="form-group my-1"> 
                 <label class="form-label">Email</label> 
                 <div> 
-            <input type="email" class="form-control" id ="email" name="email" value=""> 
+            <input type="email" class="form-control" id ="bookEmail" name="email" value=""> 
                 </div> 
             </div> 
             <div class="form-group"> 
                 <label class="form-label" for="message">Write a Note</label>      
-                <textarea class="form-control" id="message" name="message" rows="3" cols="6"></textarea> 
+                <textarea class="form-control" id="bookMessage" name="message" rows="3" cols="6"></textarea> 
             </div> 
                 <div class="my-4"> 
-                    <button type="submit" data-target="#RoomForm" class="button">RESERVE NOW</button> 
+                    <button type="submit" class="button">RESERVE NOW</button> 
                 </div> 
         </form> 
     </div> 
